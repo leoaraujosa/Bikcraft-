@@ -1,0 +1,38 @@
+:root {
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #2e2e2e;
+  --color-4: #b2b2b2;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
