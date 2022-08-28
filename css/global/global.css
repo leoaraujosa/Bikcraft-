@@ -36,3 +36,7 @@ a {
 img[src$=".jpg"] {
   border-radius: 4px;
 }
+
+blockquote {
+  margin: 0;
+}
