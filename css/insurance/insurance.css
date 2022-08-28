@@ -1,0 +1,68 @@
+.insurance-bg {
+    background-color: var(--cor-11);
+}
+
+.insurance {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.insurance h2 {
+    grid-column: 1/-1;
+}
+
+.insurance-plan {
+    background-color: var(--cor-12);
+    padding: 32px 32px 32px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.insurance-plan h3 {
+    margin-bottom: 40px;
+}
+
+.insurance-plan span {
+    grid-column: 2;
+    display: block;
+    text-align: right;
+}
+
+.insurance-plan ul {
+    grid-column: 1/-1;
+    margin-bottom: 32px;
+}
+
+.insurance-plan li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.insurance-plan li + li {
+    margin-top: 20px;
+}
+
+.insurance-plan li::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    background-image: url(../../img/icones/lista.svg);
+    position: absolute;
+    left: -21px;
+}
+
+.insurance-plan a {
+    grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+    .insurance {
+        grid-template-columns: 1fr;
+    }
+}

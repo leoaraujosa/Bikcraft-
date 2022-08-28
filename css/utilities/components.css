@@ -7,6 +7,16 @@
   color: var(--cor-p5);
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+}
+
+.button-1.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.button-1.secundario:hover {
+  background: var(--cor-9);
 }
 
 .link {
