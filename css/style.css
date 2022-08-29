@@ -1,11 +1,16 @@
 @import url(global/global.css);
+@import url(global/header.css);
+@import url(global/footer.css);
+
 @import url(utilities/typography.css);
 @import url(utilities/colors.css);
-@import url(global/header.css);
 @import url(utilities/components.css);
+
 @import url(home/main.css);
 @import url(home/technology.css);
 @import url(home/partners.css);
 @import url(home/testimonial.css);
+
 @import url(bicycles/bicycles-list.css);
+
 @import url(insurance/insurance.css);
