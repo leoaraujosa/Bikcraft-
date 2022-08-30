@@ -1,0 +1,38 @@
+.insurence-advantages-bg {
+    background-color: var(--cor-12);
+}
+
+.insurence-advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.insurence-advantages h2 {
+    margin-bottom: 60px;
+}
+
+.insurence-advantages ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+}
+
+.insurence-advantages h3,
+.insurence-advantages img {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+    .insurence-advantages { 
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .insurence-advantages h2 {
+        margin-bottom: 40px;
+    }
+
+    .insurence-advantages ul {
+        gap: 20px;
+    }
+}
