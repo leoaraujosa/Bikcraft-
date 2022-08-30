@@ -50,3 +50,27 @@
     font-size: 1rem;
   }
 }
+
+/*TITULO DAS PAGINAS INTERNAS*/
+
+.title-bg {
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
