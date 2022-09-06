@@ -14,6 +14,8 @@
 @import url(bicycles/bicycles-list.css);
 @import url(bicycles/bicycles.css);
 
+@import url(bicycle/bicycle.css);
+
 @import url(insurance/insurance.css);
 @import url(insurance/insurence-advantages.css);
 @import url(insurance/insurence-questions.css);
