@@ -5,6 +5,7 @@
 @import url(utilities/typography.css);
 @import url(utilities/colors.css);
 @import url(utilities/components.css);
+@import url(utilities/forms.css);
 
 @import url(home/main.css);
 @import url(home/technology.css);
@@ -22,3 +23,6 @@
 @import url(insurance/insurence-questions.css);
 
 @import url(terms/terms.css);
+
+@import url(contact/contact.css);
+@import url(contact/shops.css);
