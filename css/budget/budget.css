@@ -51,10 +51,47 @@
     font: 500 1rem/1.5 "Poppins", sans-serif;
     color: var(--cor-4);
     background-color: var(--cor-10);
-    display: block;
     padding: 12px 16px;
     border-radius: 4px;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border: 1px solid var(--cor-12);
+}
+
+#estado {
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    color: var(--cor-7);
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 4px;
+    background: var(--cor-1);
+    border: 1px solid var(--cor-2);
+}
+
+.checkbox-budget {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-budget label:hover {
+    background-color: var(--cor-9);
+    border-color: var(--cor-9);
+}
+
+.product-budget input:focus + label {
+    box-shadow: 0 0 0 2px var(--cor-p1);
+    border: 1px solid var(--cor-12);
+}
+
+.product-budget label span {
+    display: none;
+}
+
+.product-budget input:checked + label span {
+    display: inline-block;
 }
 
 .product-budget input:checked + label {
@@ -91,5 +128,62 @@
 
 #bikcraft:checked ~ #bikcraft-budget,
 #insurance:checked ~ #insurance-budget {
-    display: block;
+    display: grid;
+    gap: 20px;
+}
+
+.product-budget h2, .data-budget h2:nth-of-type(n + 2) {
+    margin-top: 20px;
+}
+
+.details-budget {
+    display: none;
+    background-color: var(--cor-0);
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.details-budget li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.details-budget li img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.product-budget input:checked + label + .details-budget {
+    display: grid;
+}
+
+.content-budget {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .data-budget, .product-budget {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    .budget {
+        grid-template-columns: 1fr;
+    }
+    .product-budget {
+        border-radius: 5px 5px 0 0;
+    }
+    .data-budget {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .product-budget {
+        grid-template-columns: 1fr;
+    }
 }
