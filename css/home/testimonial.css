@@ -1,7 +1,7 @@
 .testimonial {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--cor-p1);
+    background: var(--cor-p1) url(../../img/dec/bottom-right.svg) no-repeat bottom 40px right 40px;
     overflow: hidden;
 }
 
@@ -50,5 +50,11 @@
     }
     .testimonial-content {
         padding: 40px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonial-img {
+        max-height: 520px;
     }
 }

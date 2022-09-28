@@ -1,5 +1,5 @@
 .insurance-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11) url(../../img/dec/bottom-left.svg) no-repeat bottom 40px left 40px;
 }
 
 .insurance {
