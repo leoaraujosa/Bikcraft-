@@ -12,3 +12,24 @@ function ativarLink(link) {
 }
 
 links.forEach(ativarLink);
+
+// Ativar itens do orçamento.
+
+const parametros = new URLSearchParams(location.search);
+
+function ativarSeguro(parametro) {
+    const elemento = document.getElementById(parametro);
+    if (elemento) {
+        elemento.checked = true;
+    }
+}
+
+function ativarBikcraft(parametro) {
+    const elemento = document.getElementById(parametro);
+    if (elemento) {
+        elemento.checked = true;
+    }
+}
+
+parametros.forEach(ativarSeguro);
+parametros.forEach(ativarBikcraft);
