@@ -50,11 +50,11 @@
     transform: rotate(180deg);
 }
 
-.insurance-questions dd {
+.js .insurance-questions dd {
     display: none;
 }
 
-.insurance-questions dd.ativa {
+.js .insurance-questions dd.ativa {
     display: block;
 }
 

@@ -6,6 +6,7 @@
 @import url(utilities/colors.css);
 @import url(utilities/components.css);
 @import url(utilities/forms.css);
+@import url(utilities/animation.css);
 
 @import url(home/main.css);
 @import url(home/technology.css);
